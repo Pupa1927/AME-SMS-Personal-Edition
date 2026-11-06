@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#102744"><link rel="manifest" href="manifest.json">
+<title>AME-SMS Personal</title><link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="top"><div class="brandmark">A</div><div><div class="brand">AME-SMS</div><small>PERSONAL EDITION · RESEARCH WORKBENCH</small></div><button id="settings" class="iconbtn" aria-label="Settings">⚙</button></header>
+<main>
+<section class="welcome"><p class="eyebrow">YOUR RESEARCH WORKSPACE</p><h1>Academic Manuscript Engine</h1><p class="muted">Evidence-driven writing, organized in one place.</p></section>
+<div class="statgrid"><article class="stat"><span>Projects</span><b id="projectCount">01</b></article><article class="stat"><span>Evidence records</span><b id="evidenceCount">00</b></article><article class="stat"><span>Draft sections</span><b id="sectionCount">06</b></article></div>
+<section class="panel"><div class="panelhead"><div><p class="eyebrow">ACTIVE PROJECT</p><h2 id="projectTitle">Untitled research project</h2></div><span class="status">LOCAL</span></div><label for="titleInput">Research / manuscript title</label><input id="titleInput" placeholder="Enter your research title"><label for="typeSelect">Manuscript type</label><select id="typeSelect"><option>Original Research</option><option>Narrative Review</option><option>Systematic Review</option><option>Methodological Article</option><option>Case Report</option></select><button class="primary" id="saveProject">Save project details</button></section>
+<section class="panel"><div class="panelhead"><div><p class="eyebrow">MANUSCRIPT WORKFLOW</p><h2>Sections</h2></div><span class="muted">6 sections</span></div><div class="sections" id="sections"></div></section>
+<section class="panel"><div class="panelhead"><div><p class="eyebrow">EVIDENCE LIBRARY</p><h2>Research evidence</h2></div><button class="secondary" id="addEvidence">＋ Add</button></div><p class="muted small">Store key findings and source details. Records are saved in this browser on this device.</p><div id="evidenceList" class="evidenceList"></div></section>
+<section class="panel"><p class="eyebrow">AI MANUSCRIPT ENGINE</p><h2>Section synthesis</h2><p class="muted small">Starter interface. AI generation becomes available after connecting a compatible local AI service (for example, Ollama on a computer/server). No paid API is configured.</p><label for="sectionSelect">Target section</label><select id="sectionSelect"></select><label for="evidenceContext">Evidence / verified statistical inputs</label><textarea id="evidenceContext" rows="5" placeholder="Paste approved evidence, Evidence IDs, and verified statistical results..."></textarea><button class="primary" id="draftBtn">Prepare synthesis prompt</button><div id="draftResult" class="result hidden"></div></section>
+<section class="panel"><p class="eyebrow">EXPORT</p><h2>Manuscript text</h2><textarea id="manuscript" rows="8" placeholder="Paste or compose your manuscript draft here."></textarea><button class="secondary full" id="downloadTxt">Export manuscript as .txt</button></section>
+<footer>AME-SMS Personal Edition · Free personal-use starter · Review and verify all scientific content.</footer>
+</main>
+<nav class="bottomnav"><a href="#top">⌂<span>Home</span></a><a href="#sections">▤<span>Sections</span></a><a href="#evidenceList">◈<span>Evidence</span></a><a href="#draftBtn">✦<span>AI Engine</span></a></nav>
+<script src="app.js"></script>
+</body></html>
